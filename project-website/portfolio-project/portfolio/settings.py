@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -54,7 +55,8 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['portfolio/templates'],
+        # 'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,6 +117,19 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATICFILES_DIRS =[
+ os.path.join(BASE_DIR, 'portfolio/static/')
+ ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+# Laadt het bestand local_settings.py indien aanwezig.
+# Daarmee kun je lokaal settings overrulen.
+# Dit blok moet helemaal onderaan in settings.py staan.
+try:
+    from .local_settings import *
+except ImportError:
+    pass
