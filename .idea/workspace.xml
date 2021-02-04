@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846aeaab-6748-4f72-9f46-764618ecf3b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/manage.py" afterDir="false" />
@@ -9,7 +10,10 @@
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/static/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/static/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/portfolio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/werken.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/toevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-website/portfolio-project/werken/templates/werken/toevoegen.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebDevelopmentPeriode2/Webdevelopment-Eindopdracht-Periode2-Jaar1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -54,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612369817975</updated>
       <workItem from="1612369819152" duration="5188000" />
-      <workItem from="1612435258084" duration="2488000" />
+      <workItem from="1612435258084" duration="12248000" />
     </task>
     <servers />
   </component>

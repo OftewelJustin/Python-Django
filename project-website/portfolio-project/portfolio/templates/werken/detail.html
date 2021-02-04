@@ -1,14 +1,101 @@
-{% extends 'index.html' %}
-
 {% block content %}
-Details
-<br>
-    <h1>{{ werk.id }}</h1>
-    <img src="{{ werk.icon.url }}"/>
-    <img src="{{ werk.image.url }}"/>
-    {{ werk.pub_date_pretty }}<br>
-    {{ werk.summary }}<br>
-    {{ werk.votes_total }}<br>
-    {{ werk.hunter.username }}<br>
 
-{% endblock %} 
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static './css/stylesheet.css' %}" />
+    <link rel="icon" type="image/png" href="../static/img/logo.png"/>
+    <link rel="icon" type="image/png" href="../static/img/logo.png"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/img/logo.png" alt="" style="width: 60%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font-1" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="..">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                <strong>Album</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<header class="skew_bg">
+    <div class="container h-100">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#2A2A2A" fill-opacity="1" d="M0,288L1440,96L1440,320L0,320Z"></path>
+        </svg>
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <img src="../static/img/logo.png" alt="Logo">
+                <h1 class="font-weight-bolder text-header" >ONEESCAPE</h1>
+                <h4 class="font-weight-bolder" >{{ werk.title }}</h4>
+            </div>
+            <div id="about"></div>
+        </div>
+    </div>
+</header>
+<section class="py-5" style="background-color: #2A2A2A">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 mx-auto">
+
+                <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                    <p class="mb-0 mt-2 font-2 weight-400">{{ werk.body }}</p>
+                </blockquote>
+
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <img class="d-block w-100 rounded" src="{{ werk.image.url }}" alt="Image of Work">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-4 bg-dark flex-shrink-0">
+    <div class="container text-center">
+        <a href="https://www.justinberghahn.nl" class="text-muted">© 2020 - 2021 Justin Berghahn</a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock %}

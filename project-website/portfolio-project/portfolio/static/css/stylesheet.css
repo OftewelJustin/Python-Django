@@ -5,6 +5,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 
 .masthead {
     height: 100vh;
@@ -56,6 +60,8 @@
 
 .card img {
     border-radius: 3px 3px 0px 0px;
+    object-fit: cover;
+    vertical-align: center;
 }
 
 
