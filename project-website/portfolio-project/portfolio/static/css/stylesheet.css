@@ -1,3 +1,121 @@
 * {
-    font-family: Arial;
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+}
+
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image:
+            linear-gradient(90deg, rgba(206,210,230, 0.52), rgba(60,164,233, 0.73)),
+            url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+
+}
+
+.skew_bg {
+    height: 95vh;
+    background-image:
+            linear-gradient(90deg, rgba(0,24,47, 0.52), rgba(0,97,217, 0.73)),
+            url('../img/bg.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+
+
+.text-header {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.skew_bg {
+    position: relative;
+}
+
+.card {
+    border: none !important;
+    background-color: #1B1A1A;
+    color: #ffff;
+}
+
+.card img {
+    border-radius: 3px 3px 0px 0px;
+}
+
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.font-1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.font-2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.blockquote {
+    background-color: #1B1A1A !important;
+    color: #ffff;
+    font-weight: 100;
+}
+
+input, textarea {
+    background-color: #2A2A2A !important;
+    border: none !important;
+    color: #ffff !important;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+button {
+    margin-top: 15px;
+    background-color: #2A2A2A;
+    border: none;
+    color: #ffff;
+    width: 120px;
+    border-radius: 4px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2A2A2A;
+    opacity: 50%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0061D9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0458C0;
+
 }

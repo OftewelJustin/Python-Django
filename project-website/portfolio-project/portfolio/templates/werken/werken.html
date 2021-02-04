@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static './css/stylesheet.css' %}" />
+{% for werken in werken.all %}
+    <div class="col">
+        <div class="card shadow">
+            <img src="{{ werken.image.url }}" alt="Image Project">
+            <div class="card-body">
+                <h4 class="font-2 weight-400">{{ werken.title }}</h4>
+                <p class="card-text font-1">{{ werken.body }}</p>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endfor %}
+
+{% endblock %}
